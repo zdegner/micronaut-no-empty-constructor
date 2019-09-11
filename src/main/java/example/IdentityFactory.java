@@ -7,6 +7,8 @@ import io.micronaut.runtime.http.scope.RequestScope;
 public class IdentityFactory {
     @RequestScope
     public Identity identity() {
-        return new Identity("John Smith");
+        var identity = new Identity();
+        identity.setName("John Smith");
+        return identity;
     }
 }

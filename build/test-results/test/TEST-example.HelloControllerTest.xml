@@ -1,65 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="example.HelloControllerTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-09-11T16:47:03" hostname="WP8LGMMTJM2" time="1.718">
+<testsuite name="example.HelloControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-11T16:57:13" hostname="WP8LGMMTJM2" time="0.837">
   <properties/>
-  <testcase name="testHello()" classname="example.HelloControllerTest" time="1.718">
-    <failure message="io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: Failed to inject value for parameter [arg0] of class: example.$IdentityFactory$Identity0Definition$Intercepted&#13;&#10;&#13;&#10;Message: No bean of type [java.lang.String] exists. Make sure the bean is not disabled by bean requirements (enable trace logging for 'io.micronaut.context.condition' to check) and if the bean is enabled then ensure the class is declared a bean and annotation processing is enabled (for Java and Kotlin the 'micronaut-inject-java' dependency should be configured as an annotation processor).&#13;&#10;Path Taken: new $IdentityFactory$Identity0Definition$Intercepted([String arg0],BeanContext beanContext,Qualifier qualifier,Interceptor[] interceptors)" type="io.micronaut.http.client.exceptions.HttpClientResponseException">io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: Failed to inject value for parameter [arg0] of class: example.$IdentityFactory$Identity0Definition$Intercepted
-
-Message: No bean of type [java.lang.String] exists. Make sure the bean is not disabled by bean requirements (enable trace logging for 'io.micronaut.context.condition' to check) and if the bean is enabled then ensure the class is declared a bean and annotation processing is enabled (for Java and Kotlin the 'micronaut-inject-java' dependency should be configured as an annotation processor).
-Path Taken: new $IdentityFactory$Identity0Definition$Intercepted([String arg0],BeanContext beanContext,Qualifier qualifier,Interceptor[] interceptors)
-	at io.micronaut.http.client.DefaultHttpClient$10.channelRead0(DefaultHttpClient.java:1799)
-	at io.micronaut.http.client.DefaultHttpClient$10.channelRead0(DefaultHttpClient.java:1739)
-	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.micronaut.http.netty.stream.HttpStreamsHandler.channelRead(HttpStreamsHandler.java:185)
-	at io.micronaut.http.netty.stream.HttpStreamsClientHandler.channelRead(HttpStreamsClientHandler.java:180)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</failure>
-  </testcase>
-  <system-out><![CDATA[11:46:48,482 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-11:46:48,483 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
-11:46:48,484 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/haloocs/hello-world-java/build/resources/main/logback.xml]
-11:46:48,830 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
-11:46:48,832 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-11:46:48,850 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
-11:46:48,875 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
-11:46:49,008 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - Enabling JANSI WindowsAnsiOutputStream for the console.
-11:46:49,010 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - Failed to create WindowsAnsiOutputStream. Falling back on the default stream. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.fusesource.jansi.WindowsAnsiOutputStream
+  <testcase name="testHello()" classname="example.HelloControllerTest" time="0.837"/>
+  <system-out><![CDATA[11:57:04,056 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+11:57:04,056 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+11:57:04,057 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/haloocs/hello-world-java/build/resources/main/logback.xml]
+11:57:04,139 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+11:57:04,140 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:57:04,149 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+11:57:04,160 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:57:04,239 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - Enabling JANSI WindowsAnsiOutputStream for the console.
+11:57:04,240 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - Failed to create WindowsAnsiOutputStream. Falling back on the default stream. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.fusesource.jansi.WindowsAnsiOutputStream
 	at ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.fusesource.jansi.WindowsAnsiOutputStream
 	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:69)
 	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:40)
@@ -153,86 +104,12 @@ Caused by: java.lang.ClassNotFoundException: org.fusesource.jansi.WindowsAnsiOut
 	at 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
 	at 	at ch.qos.logback.core.util.OptionHelper.instantiateByClassNameAndParameter(OptionHelper.java:56)
 	at 	... 85 common frames omitted
-11:46:49,010 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
-11:46:49,010 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
-11:46:49,011 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
-11:46:49,012 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@c3ab7c2 - Registering current configuration as safe fallback point
+11:57:04,241 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+11:57:04,241 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+11:57:04,242 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+11:57:04,243 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@733c5fc1 - Registering current configuration as safe fallback point
 
-?[36m11:46:53.785?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-?[36m11:47:05.003?[0;39m ?[1;30m[nioEventLoopGroup-1-3]?[0;39m ?[1;31mERROR?[0;39m ?[35mi.m.h.s.netty.RoutingInBoundHandler?[0;39m - Unexpected error occurred: Failed to inject value for parameter [arg0] of class: example.$IdentityFactory$Identity0Definition$Intercepted
-
-Message: No bean of type [java.lang.String] exists. Make sure the bean is not disabled by bean requirements (enable trace logging for 'io.micronaut.context.condition' to check) and if the bean is enabled then ensure the class is declared a bean and annotation processing is enabled (for Java and Kotlin the 'micronaut-inject-java' dependency should be configured as an annotation processor).
-Path Taken: new $IdentityFactory$Identity0Definition$Intercepted([String arg0],BeanContext beanContext,Qualifier qualifier,Interceptor[] interceptors)
-io.micronaut.context.exceptions.DependencyInjectionException: Failed to inject value for parameter [arg0] of class: example.$IdentityFactory$Identity0Definition$Intercepted
-
-Message: No bean of type [java.lang.String] exists. Make sure the bean is not disabled by bean requirements (enable trace logging for 'io.micronaut.context.condition' to check) and if the bean is enabled then ensure the class is declared a bean and annotation processing is enabled (for Java and Kotlin the 'micronaut-inject-java' dependency should be configured as an annotation processor).
-Path Taken: new $IdentityFactory$Identity0Definition$Intercepted([String arg0],BeanContext beanContext,Qualifier qualifier,Interceptor[] interceptors)
-	at io.micronaut.context.AbstractBeanDefinition.getBeanForConstructorArgument(AbstractBeanDefinition.java:994)
-	at example.$$IdentityFactory$Identity0Definition$InterceptedDefinition.build(Unknown Source)
-	at io.micronaut.context.DefaultBeanContext.doCreateBean(DefaultBeanContext.java:1535)
-	at io.micronaut.context.DefaultBeanContext.lambda$getScopedBeanForDefinition$55(DefaultBeanContext.java:1948)
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
-	at io.micronaut.context.DefaultBeanContext.getScopedBeanForDefinition(DefaultBeanContext.java:1937)
-	at io.micronaut.context.DefaultBeanContext.getBeanForDefinition(DefaultBeanContext.java:1919)
-	at io.micronaut.context.DefaultBeanContext.getBeanInternal(DefaultBeanContext.java:1892)
-	at io.micronaut.context.DefaultBeanContext.getBean(DefaultBeanContext.java:577)
-	at io.micronaut.context.UnresolvedProvider.get(UnresolvedProvider.java:58)
-	at example.HelloController.hello(HelloController.java:43)
-	at example.$HelloControllerDefinition$Intercepted.$$access0(Unknown Source)
-	at example.$HelloControllerDefinition$Intercepted$$proxy0.invokeInternal(Unknown Source)
-	at io.micronaut.context.AbstractExecutableMethod.invoke(AbstractExecutableMethod.java:144)
-	at io.micronaut.aop.chain.InterceptorChain.lambda$new$1(InterceptorChain.java:93)
-	at io.micronaut.aop.chain.InterceptorChain.proceed(InterceptorChain.java:150)
-	at io.micronaut.validation.ValidatingInterceptor.intercept(ValidatingInterceptor.java:122)
-	at io.micronaut.aop.MethodInterceptor.intercept(MethodInterceptor.java:40)
-	at io.micronaut.aop.chain.InterceptorChain.proceed(InterceptorChain.java:150)
-	at example.$HelloControllerDefinition$Intercepted.hello(Unknown Source)
-	at example.$$HelloControllerDefinition$InterceptedDefinition$$exec1.invokeInternal(Unknown Source)
-	at io.micronaut.context.AbstractExecutableMethod.invoke(AbstractExecutableMethod.java:144)
-	at io.micronaut.context.DefaultBeanContext$BeanExecutionHandle.invoke(DefaultBeanContext.java:2792)
-	at io.micronaut.web.router.AbstractRouteMatch.execute(AbstractRouteMatch.java:294)
-	at io.micronaut.web.router.RouteMatch.execute(RouteMatch.java:122)
-	at io.micronaut.http.server.netty.RoutingInBoundHandler.lambda$buildResultEmitter$17(RoutingInBoundHandler.java:1378)
-	at io.reactivex.internal.operators.flowable.FlowableDefer.subscribeActual(FlowableDefer.java:35)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14865)
-	at io.micronaut.reactive.rxjava2.RxInstrumentedFlowable.subscribeActual(RxInstrumentedFlowable.java:68)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.internal.operators.flowable.FlowableMap.subscribeActual(FlowableMap.java:37)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14865)
-	at io.micronaut.reactive.rxjava2.RxInstrumentedFlowable.subscribeActual(RxInstrumentedFlowable.java:68)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.internal.operators.flowable.FlowableSwitchIfEmpty.subscribeActual(FlowableSwitchIfEmpty.java:32)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14865)
-	at io.micronaut.reactive.rxjava2.RxInstrumentedFlowable.subscribeActual(RxInstrumentedFlowable.java:68)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14868)
-	at io.micronaut.http.context.ServerRequestTracingPublisher.lambda$subscribe$0(ServerRequestTracingPublisher.java:52)
-	at io.micronaut.http.context.ServerRequestContext.with(ServerRequestContext.java:52)
-	at io.micronaut.http.context.ServerRequestTracingPublisher.subscribe(ServerRequestTracingPublisher.java:52)
-	at io.reactivex.internal.operators.flowable.FlowableFromPublisher.subscribeActual(FlowableFromPublisher.java:29)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14865)
-	at io.micronaut.reactive.rxjava2.RxInstrumentedFlowable.subscribeActual(RxInstrumentedFlowable.java:68)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14918)
-	at io.reactivex.Flowable.subscribe(Flowable.java:14865)
-	at io.reactivex.internal.operators.flowable.FlowableSubscribeOn$SubscribeOnSubscriber.run(FlowableSubscribeOn.java:82)
-	at io.reactivex.internal.schedulers.ExecutorScheduler$ExecutorWorker$BooleanRunnable.run(ExecutorScheduler.java:288)
-	at io.reactivex.internal.schedulers.ExecutorScheduler$ExecutorWorker.run(ExecutorScheduler.java:253)
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-Caused by: io.micronaut.context.exceptions.NoSuchBeanException: No bean of type [java.lang.String] exists. Make sure the bean is not disabled by bean requirements (enable trace logging for 'io.micronaut.context.condition' to check) and if the bean is enabled then ensure the class is declared a bean and annotation processing is enabled (for Java and Kotlin the 'micronaut-inject-java' dependency should be configured as an annotation processor).
-	at io.micronaut.context.DefaultBeanContext.getBeanInternal(DefaultBeanContext.java:1903)
-	at io.micronaut.context.DefaultBeanContext.getBean(DefaultBeanContext.java:1021)
-	at io.micronaut.context.AbstractBeanDefinition.getBeanForConstructorArgument(AbstractBeanDefinition.java:985)
-	... 60 common frames omitted
+?[36m11:57:07.395?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
