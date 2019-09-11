@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut.test:micronaut-test-junit5:1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.test/micronaut-test-junit5/1.1.0/23d1ca2ba7adcffbfa87b3e7dcd1f8fdc3344c6e/micronaut-test-junit5-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.test/micronaut-test-junit5/1.1.0/df62a41bf08ee969145fa440bf4ffce5705a9ba/micronaut-test-junit5-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

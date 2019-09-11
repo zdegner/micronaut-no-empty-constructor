@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut:micronaut-inject:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject/1.2.0/7472683c669d362b4c02724fbaacaba64931772e/micronaut-inject-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject/1.2.0/d10917b6231f52217a15bb13616edb0b2e80d8b1/micronaut-inject-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

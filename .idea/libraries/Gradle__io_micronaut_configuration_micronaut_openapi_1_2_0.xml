@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut.configuration:micronaut-openapi:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.configuration/micronaut-openapi/1.2.0/27148125ebaf691300c129ee765bb11ae3556db0/micronaut-openapi-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.configuration/micronaut-openapi/1.2.0/cf3c20d138cb4508bbcc2c4294d62e3f5d289257/micronaut-openapi-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
