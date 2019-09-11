@@ -16,7 +16,7 @@ public class HelloControllerTest {
     @Test
     void testHello() {
         assertEquals(
-                "Hello Fred!",
+                "Hello Fred from John Smith",
                 helloClient.hello("Fred").blockingGet());
     }
 }
